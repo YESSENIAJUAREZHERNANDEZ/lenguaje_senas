@@ -1,0 +1,85 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Assistant', sans-serif;
+	font-family: 'Source Sans 3', sans-serif;
+}
+
+/* Estilo del menú superior */
+header {
+    background-color: #FFFFFF; /* Cambia el color de fondo a lila */
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 60px; /* Ajusta el tamaño del logo según tus necesidades */
+    margin-left: 20px; /* Espaciado entre el logo y los elementos del menú */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1E5034;
+    font-weight: bold;
+}
+
+/* Estilo de la lista de tarjetas de cursos */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e6e6e6; /* Cambia el color de fondo a lila */
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.course-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff; /* Cambia el color de fondo de las tarjetas si lo deseas */
+}
+
+.course-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.course-card a {
+    display: inline-block;
+    background-color: #a862ea; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Transición para efectos hover */
+}
+
+.course-card a:hover {
+    background-color: #779cd8; /* Cambia este valor al color de fondo de hover que desees */
+    color: #fff; /* Cambia este valor al color del texto de hover que desees */
+}
+

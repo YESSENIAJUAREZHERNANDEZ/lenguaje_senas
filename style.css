@@ -85,3 +85,16 @@ main {
     color: #fff; /* Cambia este valor al color del texto de hover que desees */
 }
 
+.contact-button {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #005A3C; /* Color de fondo verde oscuro */   
+    padding: 10px 20px;
+    border-radius: 20px; /* Borde redondeado */
+    transition: background-color 0.3s; /* Transición de color al hacer hover */
+}
+
+.contact-button:hover {
+    background-color: #007B4F; /* Cambio de color de fondo al hacer hover */
+}

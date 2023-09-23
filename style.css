@@ -33,9 +33,9 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     font-weight: bold;
-    font-size: 18px; /* Cambia este valor al tamaño de texto que desees */
+    font-size: 14px; /* Cambia este valor al tamaño de texto que desees */
 }
 
 
@@ -81,7 +81,7 @@ main {
 }
 
 .course-card a:hover {
-    background-color: #779cd8; /* Cambia este valor al color de fondo de hover que desees */
+    background-color: #794AD1; /* Cambia este valor al color de fondo de hover que desees */
     color: #fff; /* Cambia este valor al color del texto de hover que desees */
 }
 

@@ -33,9 +33,11 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #1E5034;
+    color: #fff;
     font-weight: bold;
+    font-size: 18px; /* Cambia este valor al tamaño de texto que desees */
 }
+
 
 /* Estilo de la lista de tarjetas de cursos */
 main {

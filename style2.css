@@ -1,0 +1,42 @@
+body {
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex; /* Alineación horizontal */
+    justify-content: space-between; /* Espacio alrededor de las tarjetas */
+    align-items: flex-start; /* Alineación vertical al principio */
+}
+
+.question-list {
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%; /* Ancho reducido para las tarjetas amarillas */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.question-description {
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%; /* Ancho reducido para las tarjetas amarillas */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.large-card {
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 5px;
+    width: 60%; /* Aumenta el ancho para la tarjeta blanca */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}

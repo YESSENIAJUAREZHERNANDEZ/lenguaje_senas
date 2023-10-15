@@ -1,0 +1,17 @@
+{
+    "lang": "en-us",
+    "name": "Aprende señas app",
+    "short_name": "Aprende señas",
+    "description": "Una PWA para reforzar tus conocimientos aprendidos acerca del lenguaje de señas",
+    "start_url": "/",
+    "background_color": "#e6e6e6",
+    "theme_color": "#e6e6e6",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "logo.png",
+            "sizes": "432x432"
+        }
+    ]
+}

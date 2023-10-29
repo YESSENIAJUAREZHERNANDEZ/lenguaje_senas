@@ -4,3 +4,5 @@ const browserInformation = {
   };
   
   localStorage.setItem('browser', JSON.stringify(browserInformation));
+
+const value = localStorage.getItem('browser');

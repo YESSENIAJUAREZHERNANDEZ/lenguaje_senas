@@ -1,74 +1,35 @@
 <!DOCTYPE html>
-<html lang="en_US" dir="ltr">
+<html lang="es">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
-    <title>SeñaFacil</title>
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Assistant&family=Source+Sans+3:wght@600;700&display=swap" rel="stylesheet">
-	
+    <title>LocalStorage Example</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo de la empresa">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">CATEGORÍAS</a></li>
-				<li><a href="#" class="contact-button">REGISTRARSE</a></li>
-                <li><a href="#" class="contact-button">INICIAR SESIÓN</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <h1>Cursos Disponibles</h1>
-		<br>
-        <div class="course-grid">
-            <div class="course-card">
-                <h2>Curso 1</h2>
-                <p>Fundamentos en inclusión y discapacidad auditiva</p>
-                <a href="#">Más información</a>
-            </div>
-            <div class="course-card">
-                <h2>Curso 2</h2>
-                <p>Vocabulario: Señas básicas</p>
-                <a href="#">Más información</a>
-            </div>
-            <div class="course-card">
-                <h2>Curso 3</h2>
-                <p>Verbos</p>
-                <a href="#">Más información</a>
-            </div>
-            <!-- Agrega más tarjetas de cursos según sea necesario -->
-			<div class="course-card">
-                <h2>Curso 1</h2>
-                <p>Descripción del curso 4.</p>
-                <a href="#">Más información</a>
-            </div>
-            <div class="course-card">
-                <h2>Curso 2</h2>
-                <p>Descripción del curso 5.</p>
-                <a href="#">Más información</a>
-            </div>
-            <div class="course-card">
-                <h2>Curso 3</h2>
-                <p>Descripción del curso 6.</p>
-                <a href="#">Más información</a>
-            </div>
-        </div>
-    </main>
-</body>
+    <button id="storeButton">Almacenar Datos</button>
+    <button id="retrieveButton">Recuperar Datos</button>
+
     <script>
-        if('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js', { scope: '/' });
-    }
+        // Función para almacenar datos en localStorage
+        document.getElementById('storeButton').addEventListener('click', function() {
+            const browserInformation = {
+                name: 'Opera',
+                version: 108
+            };
+            localStorage.setItem('browser', JSON.stringify(browserInformation));
+            alert('Datos almacenados en localStorage.');
+        });
+
+        // Función para recuperar datos de localStorage
+        document.getElementById('retrieveButton').addEventListener('click', function() {
+            const storedData = localStorage.getItem('browser');
+            if (storedData) {
+                const parsedData = JSON.parse(storedData);
+                alert(`Nombre del navegador: ${parsedData.name}, Versión: ${parsedData.version}`);
+            } else {
+                alert('No se encontraron datos en localStorage.');
+            }
+        });
     </script>
+</body>
 </html>

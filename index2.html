@@ -1,27 +1,50 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juego de Trivia</title>
-    <link rel="stylesheet" href="style2.css">
+    <title>Almacenar Cookies</title>
 </head>
 <body>
-    <div class="container">
-        <div class="question-list">
-            <!-- Aquí puedes agregar la lista de preguntas -->
-            <ul>
-                <li>Pregunta 1</li>
-                <li>Pregunta 2</li>
-                <li>Pregunta 3</li>
-                <!-- Agrega más preguntas según sea necesario -->
-            </ul>
-        </div>
-        <div class="large-card"> <!-- Utiliza la clase .large-card para la tarjeta blanca -->
-            <!-- Aquí puedes agregar la descripción de la pregunta seleccionada -->
-            <h2>Pregunta 1</h2>
-            <p>Descripción de la pregunta 1...</p>
-        </div>
-    </div>
+    <h1>Almacenar Cookies</h1>
+
+    <button onclick="setCookie()">Guardar Cookie</button>
+    <button onclick="getCookie()">Obtener Cookie</button>
+
+    <script>
+        // Función para establecer una cookie
+        function setCookie() {
+            var cookieName = "miCookie";
+            var cookieValue = "Cookie sitio Lenguaje de señas";
+            var expirationDays = 30; // La duración de la cookie en días
+
+            var date = new Date();
+            date.setTime(date.getTime() + (expirationDays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + date.toUTCString();
+
+            document.cookie = cookieName + "=" + cookieValue + "; " + expires;
+
+            alert("Cookie establecida");
+        }
+
+        // Función para obtener una cookie
+        function getCookie() {
+            var cookieName = "miCookie";
+            var cookies = document.cookie.split(';');
+
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i];
+                while (cookie.charAt(0) == ' ') {
+                    cookie = cookie.substring(1);
+                }
+
+                if (cookie.indexOf(cookieName) == 0) {
+                    var cookieValue = cookie.substring(cookieName.length + 1, cookie.length);
+                    alert("Valor de la cookie: " + cookieValue);
+                    return;
+                }
+            }
+
+            alert("La cookie no se encontró.");
+        }
+    </script>
 </body>
 </html>

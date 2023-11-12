@@ -5,13 +5,44 @@
     "description": "Una PWA para reforzar tus conocimientos aprendidos acerca del lenguaje de señas",
     "start_url": "/",
     "background_color": "#e6e6e6",
-    "theme_color": "#e6e6e6",
+    "theme_color": "#FFFFFF",
     "orientation": "any",
     "display": "standalone",
     "icons": [
         {
-            "src": "logo.png",
-            "sizes": "432x432"
+            "src": "/icons/icon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-24x24.png",
+            "sizes": "24x24",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
         }
     ]
 }

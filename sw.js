@@ -33,3 +33,9 @@ self.addEventListener('fetch', event => {
     }
   })());
 });
+
+// To display an empty badge
+navigator.setAppBadge();
+
+// To display a number in the badge
+navigator.setAppBadge(42);

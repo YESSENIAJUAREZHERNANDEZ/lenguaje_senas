@@ -49,17 +49,17 @@
             </div>
             <!-- Agrega más tarjetas de cursos según sea necesario -->
 			<div class="course-card">
-                <h2>Curso 1</h2>
+                <h2>Curso 4</h2>
                 <p>Descripción del curso 4.</p>
                 <a href="#">Más información</a>
             </div>
             <div class="course-card">
-                <h2>Curso 2</h2>
+                <h2>Curso 5</h2>
                 <p>Descripción del curso 5.</p>
                 <a href="#">Más información</a>
             </div>
             <div class="course-card">
-                <h2>Curso 3</h2>
+                <h2>Curso 6</h2>
                 <p>Descripción del curso 6.</p>
                 <a href="#">Más información</a>
             </div>
@@ -70,5 +70,9 @@
         if('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js', { scope: '/' });
     }
+
+    if (navigator.setAppBadge) {
+    console.log("Si se puede The App Badging API is supported!");
+}
     </script>
 </html>
